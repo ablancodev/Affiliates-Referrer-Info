@@ -10,4 +10,4 @@ Examples:
 
 [aff_referrer_info show_name="" show_email="" separator="-" /]
 
-By default separator is " <br >".
+By default separator is "  &lt;br&gt;".
