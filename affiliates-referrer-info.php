@@ -8,8 +8,12 @@ Version: 1.0
 Author URI: http://www.eggemplo.com
 */
 
-add_shortcode('aff-referrer-info', 'aff_referrer_info');
-add_shortcode('aff_referrer_info', 'aff_referrer_info');
+add_action ( 'init', 'add_aff_referrer_info_shortcodes' );
+
+function add_aff_referrer_info_shortcodes($data) {
+	add_shortcode ( 'aff-referrer-info', 'aff_referrer_info' );
+	add_shortcode ( 'aff_referrer_info', 'aff_referrer_info' );
+}
 
 function aff_referrer_info ($attr = array()) {
 	
